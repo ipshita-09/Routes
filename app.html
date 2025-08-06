@@ -1,0 +1,107 @@
+<!--<div class="form-container">
+  <h1>App Component Elements</h1>
+  <app-form></app-form>
+  <img [src]="imgsrc" alt="loading"/>
+  <input type="text" placeholder="keyup event" (keyup)="keyPressed($event)"/><br>
+  <input type="text" [(ngModel)] ="staticInput"/><br>
+  <input type="text" placeholder="For dynamic value" [(ngModel)] ="dynamicInput"/>
+    <h1>{{ dynamicInput }}</h1>
+</div>-->
+
+<!--<h1 *ngIf="num>0" > {{num}} is greater than 0</h1>
+<h1 *ngIf="num===0" >{{num}} is equal to 0<h1>
+<h1 *ngIf="num <0" > {{num}} is less than 0 <h1>-->
+
+<!--router-outlet *ngFor="let value of full">
+  <ul>
+    <li>{{value.id}}</li>
+    <li>{{value.name}}</li>
+  </ul>
+</div>-->
+
+<!--<p [ngClass]= "['update' ,'italicText' ,'letterFormat']">This is an example of NgClass Directive</p>
+<input type="text" placeholder="Enter text here...then color will change" (input)="textInput($event)"
+ [ngClass]="{'txt':hasText}"/>-->
+
+ <!--<div>
+  <h2>Role Selection</h2>
+  <select class="select" [(ngModel)]="employeRole">
+    <option value=" ">Select role</option>
+    <option value="Admin ">Admin</option>
+    <option value="HR ">HR</option>
+    <option value="Developer ">Developer</option>
+    <option value=" Marketing">Marketing</option>
+    <option value="Analyst">Analyst</option>
+  </select>
+  @switch (employeRole){
+    @case('Admin'){
+      <h1>List of selection</h1>
+      <h2>Selected role:Admin</h2>
+      <table>
+        <thead>
+          <tr>
+            <td>ID</td>
+            <td>Name</td>
+            <td>Role</td>
+          </tr>
+        </thead>
+        @for (emp of employ(); track $index) {
+          @if (emp.role==="Admin") {
+            <tr>
+              <td> {{emp.id}} </td>
+              <td> {{emp.name}} </td>
+              <td> {{emp.role}} </td>
+            </tr>
+          }
+        }
+      </table>
+    }
+  }
+ </div>-->
+
+ <!--<button (click)="toggleMode()">{{colorMode==='light'? 'swicth to Dark mode' : 'switch to light mode'}}</button>
+ <div class="box" [ngClass]="colorMode">
+  <h1>Light mode</h1>
+  <p>A space-separated list of the classes of the element. Classes allows CSS and JavaScript to select and access specific
+     elements via the class selectors or functions like the method Document.getElementsByClassName().
+  </p>
+ </div>
+ <div class="box" [ngClass]="colorMode">
+  <h1>Dark mode</h1>
+  <p>A space-separated list of the classes of the element. Classes allows CSS and JavaScript to select and access specific
+     elements via the class selectors or functions like the method Document.getElementsByClassName().
+  </p>
+ </div> -->
+
+
+<!--<div style="text-align: center;">
+   <p [ngStyle]="{'color':'red','background-color':'blue'}">Hellow world</p>
+</div>-->
+
+<!--<div>        (changing colour of formfield)
+  <form class="formBox">
+    <h1>Form</h1>
+    <label for ="lable">Name</label>
+    <input type="text" class="input-box" [(ngModel)]= "nm" [ngStyle] ="{'background-color': nm ? 'lightgreen' : 'pink'}" required/>
+    <label for ="lable">Email</label>
+    <input type="email" class="input-box" [(ngModel)]= "em" [ngStyle] ="{'background-color': isValid ? 'lightgreen' : 'pink'}" 
+    (input)= "checkEmailValidation(em)" required/>
+    <button class="submit" (click)= "msg()">Submit</button>
+  </form>
+  <p *ngIf="formsubmit">Form Submitted Successfully</p>
+</div>
+
+<app-child (myEvent)="recieveChildEvent($event)"></app-child>
+<h1>Parent Component/h1>
+<p>{{message}}</p>
+
+<div>
+  <label for="colorpicker">Select</label>
+  <input type="color" id="colorpicker"#colorInput>   
+</div>
+<div class="color-box" [style.backgroungColor]="selectedColor">
+  <h1>App Component</h1>
+  <p>The input element represents a typed data field, usually with a form control to allow the user to edit the data.
+    Baseline icon Widely available across major browsers </p>
+</div>-->
+<router-outlet></router-outlet>
